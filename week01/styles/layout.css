@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-weight:normal;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    padding: 1rem;
+    font-weight: normal;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    padding: 1rem;
+    background-color: #ccc;
+    min-height: 300px;
+}
+
+aside {
+    grid-area: aside;
+    padding: 1rem;
+    background-color: white;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: white;
+}
