@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131- BYU Idaho</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals- Home Page">
+    <meta name="author" content="Abbigail Nelson">
+    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 - Dynamic Web Fundamentals | Abbigail Nelson</title>
+
 </head>
 <body>
-    <h1>WDD 131 - Abbigail Nelson</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Abbigail Nelson</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/abbigail-nelson-b44a31320/"> LinkedIn</a></li>
+                <li><a href="#">Canvas</a></li>
+                <li><a href="#">Scipture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card-container">
+            <section class="card about-me">
+                <h2>About Me</h2>
+                <div class="profile-container">
+                    <img src="images/profile.jpg" alt="Photo of Abbigail" class="profile-pic" width="300">
+                    <p>Hello! My name is Abbigail Nelson and I was born and raised in Utah my whole life. I am currently a student at BYU-Idaho, studying Software Development. I enjoy the outdoors, crafts, and spending time with my family. I’m passionate about creating meaningful connections through technology and look forward to using my skills to serve others. Balancing school, family, and faith has been challenging at times, but it has also been incredibly rewarding. I wouldn't be able to get through this program without our heavenly father helping me every step of the way. I love him and hope to improve each and every day like him.</p>
+                </div>
+                <h3 class="underline">Utah, United States</h3>
+                <div class="utah-container">
+                    <figure>
+                        <img src="images/utah.jpg" alt="Utahs landscapes" width="300">
+                        <figcaption>One of Utah's landscapes</figcaption>
+                    </figure>
+                    <p>Utah is a state in the western United States known for its stunning and diverse landscapes. From the towering, snow-capped peaks of the Wasatch Range to the otherworldly red rock formations of southern Utah, the state offers a dramatic mix of mountains, deserts, and canyons. Salt Lake City, the capital, lies near the Great Salt Lake. </p>
+                </div>
+            </section>
+            <section class="card favorite-temples">
+                <h2>Favorite Temples</h2>
+                <ul class="box">
+                    <li><a href="https://churchofjesuschristtemples.org/paris-france-temple/photographs/#Official-11"
+                            target="_blank">Paris France Temple</a></li>
+                    <li><a href="https://churchofjesuschristtemples.org/rome-italy-temple/photographs/#Official-25"
+                            target="_blank">Rome Italy Temple</a></li>
+                    <li><a href="https://churchofjesuschristtemples.org/provo-city-center-temple/photographs/#Official-33"
+                            target="_blank">Provo City Center Temple</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ⛰️ Abbigail Nelson ⛰️ | Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

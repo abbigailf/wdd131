@@ -1,0 +1,173 @@
+:root {
+    --primary-color: #4e6e81;
+    --secondary-color: #31465b;
+    --accent1-color: #2c3e50;
+    --accent2-color: #204060;
+    --heading-font: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--heading-font);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #fff;
+    color: #111;
+}
+
+header {
+    display: block;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.1rem;
+}
+
+header h1 {
+    margin: 0.7rem;
+    font-weight: lighter;
+    font-size: x-large;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    padding: 0.1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--accent1-color);
+    border-radius: 5px;
+}
+
+main {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        max-width: 100%;
+    }
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: lighter;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.profile-pic {
+    max-width: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.underline {
+    border-bottom: 1px solid #111;
+    display: inline-block;
+    padding-bottom: 0.1rem;
+    padding-right: 0.2rem;
+    padding-left: 0.2rem;
+}
+
+figure {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.utah-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.favorite-temples {
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    padding: 1rem;
+    gap: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.box li a:hover {
+    text-decoration: underline;
+    color:#204060;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    color: white;
+    background-color: var(--primary-color);
+}
