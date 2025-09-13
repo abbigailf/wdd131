@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script defer src="scripts/temples.js"></script>
+    <title>Temple Picture Album</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <h2 class="site-title">Temple Album</h2>
+    
+            <button id="hamburger" class="hamburger" aria-controls="primary-nav" aria-expanded="false"
+                aria-label="Open navigation">
+                <span class="hamburger-line" aria-hidden="true"></span>
+                <span class="hamburger-line" aria-hidden="true"></span>
+                <span class="hamburger-line" aria-hidden="true"></span>
+            </button>
+    
+            <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#old">Old</a></li>
+                    <li><a href="#new">New</a></li>
+                    <li><a href="#large">Large</a></li>
+                    <li><a href="#small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Favorite Temple Photos</h1>
+        <section class="gallery" aria-label="Temple photo gallery">
+            <figure class="card">
+                <img src="images/temple1.jpg" alt="Nauvoo Illinois Temple" loading="lazy">
+                <figcaption>Nauvoo Illinois Temple</figcaption>
+            </figure>
+    
+            <figure class="card">
+                <img src="images/temple2.jpg" alt="Brigham City Utah Temple" loading="lazy">
+                <figcaption>Brigham City Utah Temple</figcaption>
+            </figure>
+    
+            <figure class="card">
+                <img src="images/temple3.jpg" alt="Okinawa Japan Temple" loading="lazy">
+                <figcaption>Okinawa Japan Temple</figcaption>
+            </figure>
+    
+            <figure class="card">
+                <img src="images/temple4.jpg" alt="Temple 4 reflection in pond" loading="lazy">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+    
+            <figure class="card">
+                <img src="images/temple5.jpg" alt="London England temple" loading="lazy">
+                <figcaption>London England Temple</figcaption>
+            </figure>
+    
+            <figure class="card">
+                <img src="images/temple6.jpg" alt="Temple 6 at dusk" loading="lazy">
+                <figcaption>Logan Utah Temple</figcaption>
+            </figure>
+    
+            <figure class="card">
+                <img src="images/temple7.jpg" alt="Rome Italy Temple" loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+    
+            <figure class="card">
+                <img src="images/temple8.jpg" alt="Feather River California Temple" loading="lazy">
+                <figcaption>Feather River California Temple</figcaption>
+            </figure>
+    
+            <figure class="card">
+                <img src="images/temple9.jpg" alt="Fortaleza Brazil Temple" loading="lazy">
+                <figcaption>Fortaleza Brazil Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="currentyear"></span> ⛰️ Abbigail Nelson ⛰️ | Utah, USA</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

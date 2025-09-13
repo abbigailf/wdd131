@@ -1,0 +1,63 @@
+@media (min-width: 760px) {
+    .hamburger {display: none;}
+
+    .primary-nav {
+        display: block !important;
+        background: var(--primary-color);
+    }
+
+    .nav-list {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+
+    .nav-list a {
+        padding: 0.5rem 0.25rem;
+        border-radius: 4px;
+    }
+
+    .nav-list a:hover,
+    .nav-list a:focus {
+        color: var(--accent1);
+        border-bottom: 3px solid var(--accent);
+        padding-bottom: 0.2rem;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    .card img {
+        aspect-ratio: 4/3;
+    }
+
+    .header-inner {
+        align-items: center;
+    }
+
+    .site-title {
+        font-size: 1.4rem;
+    }
+
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width:1200px) {
+    .gallery {
+        gap: 1.25rem;
+    }
+
+    main {
+        padding: 2.5rem
+    }
+}
