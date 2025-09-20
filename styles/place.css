@@ -101,14 +101,18 @@ footer {
         width: 80%;
     }
 
-        .about-utah.floating-box, .weather.floating-box {
-            background: transparent !important;
-            box-shadow: none !important;
-            border-radius: 0 !important;
-            padding: 0 !important;
-            width: auto !important;
-            color: inherit;
-        }
+    .weather-icon {
+        display: block;
+    }
+
+    .about-utah.floating-box, .weather.floating-box {
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+        color: inherit;
+    }
 }
 
 .weather {
@@ -165,6 +169,18 @@ footer {
         width: clamp(260px, 28%, 360px);
         min-width: 220px;
         max-width: 33%;
+    }
+    
+    .weather h2::after {
+        content: " ⛅";
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    .weather-icon {
+        display: none;
     }
 
     .weather .weather-icon {
