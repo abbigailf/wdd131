@@ -1,0 +1,185 @@
+:root {
+    --primary-color: rgb(12, 12, 63);
+    --secondary-color: white;
+    --font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+header,
+footer {
+    max-width: 1200px;
+    /* match hero-container max-width */
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.hero-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-container picture,
+.hero-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about-utah,
+.weather {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.about-utah table {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.about-utah table th {
+    text-align: right;
+    font-weight: normal;
+    padding-right: 0.5em;
+    white-space: nowrap;
+}
+
+.about-utah table th::after {
+    content: ":";
+}
+
+.about-utah table td {
+    text-align: left;
+    padding-left: 0.5em;
+}
+
+
+.weather-icon {
+    font-size: 3rem;
+    margin: 0.1rem auto 0.5rem;
+}
+
+.floating-box {
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 260px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+/* Mobile-only line separator */
+@media (max-width: 767px) {
+    .about-utah::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: #ccc;
+        margin: 1.5rem auto;
+        width: 80%;
+    }
+
+        .about-utah.floating-box, .weather.floating-box {
+            background: transparent !important;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            padding: 0 !important;
+            width: auto !important;
+            color: inherit;
+        }
+}
+
+.weather {
+    position: static;
+    margin: 1rem auto;
+    width: auto;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+    .hero-container {
+        position: relative;
+        height: 600px;
+    }
+
+    .hero-container picture,
+    .hero-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .about-utah {
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        margin: 0;
+        z-index: 10;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 2rem;
+        right: 2rem;
+        margin: 0;
+        z-index: 10;
+    }
+
+    .floating-box {
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(5px);
+        border-radius: 1rem;
+        padding: 1.25rem 1.5rem;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+        width: clamp(260px, 28%, 360px);
+        min-width: 220px;
+        max-width: 33%;
+    }
+
+    .weather .weather-icon {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        text-align: center;
+        clear: both;
+    }
+}
+

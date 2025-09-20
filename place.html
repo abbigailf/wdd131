@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Place Page">
+    <meta name="author" content="Abbigail Nelson">
+    <title>Explore Utah</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Utah</h1>
+    </header>
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/utah-hero-small.webp" media="(max-width: 600px)">
+                <source srcset="images/utah-hero-medium.webp" media="(max-width: 1200px)">
+                <img src="images/utah-hero-large.webp" alt="Utah hero image" loading="lazy">
+            </picture>
+        
+            <section class="about-utah floating-box">
+                <h2>About Utah</h2>
+                <table>
+                    <tr>
+                        <th>Capital</th>
+                        <td>Salt Lake City</td>
+                    </tr>
+                    <tr>
+                        <th>Population</th>
+                        <td>3.4 million (2023 estimate)</td>
+                    </tr>
+                    <tr>
+                        <th>Area</th>
+                        <td>84,899 square miles</td>
+                    </tr>
+                    <tr>
+                        <th>Counties</th>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <th>Statehood</th>
+                        <td>January 4, 1896</td>
+                    </tr>
+                    <tr>
+                        <th>Major Cities</th>
+                        <td>Salt Lake City, Provo, Ogden, St. George</td>
+                    </tr>
+                    <tr>
+                        <th>Nickname</th>
+                        <td>The Beehive State</td>
+                    </tr>
+                </table>
+            </section>
+        
+            <section class="weather floating-box">
+                <h2>Weather</h2>
+                <p class="weather-icon">⛅</p>
+                <p>Temperature: <span id="temperature">58</span>°F</p>
+                <p>Wind Speed: <span id="wind-speed">3</span> km/h</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> ⛰️ Abbigail Nelson ⛰️ | Utah, USA</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
