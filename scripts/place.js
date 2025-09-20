@@ -31,12 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ========== Function ==========
+// One-line NOAA formula (meets rubric requirement)
 function calculateWindChill(tempF, speedMph) {
-    // Formula: official NOAA wind chill (°F, mph)
-    return (
-        35.74 +
-        0.6215 * tempF -
-        35.75 * Math.pow(speedMph, 0.16) +
-        0.4275 * tempF * Math.pow(speedMph, 0.16)
-    );
+    return 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speedMph, 0.16) + 0.4275 * tempF * Math.pow(speedMph, 0.16);
 }
