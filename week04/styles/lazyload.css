@@ -1,0 +1,49 @@
+/* Center column layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+img {
+    display: block;
+    /* One column */
+    margin: 2rem auto;
+    /* Center horizontally */
+    width: 400px;
+    /* Fixed width */
+    height: auto;
+    opacity: 0;
+    /* Start invisible */
+    animation: fadeIn 1.5s ease forwards;
+}
+
+/* Fade from black */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    background: #222;
+    color: #fff;
+}
