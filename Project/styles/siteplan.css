@@ -6,7 +6,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserret', san-serif;
+    font-weight: 400;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     margin: 20px;
@@ -16,7 +17,8 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Lora', serif;
+    font-family: 'Montserret', sans-serif;
+    font-weight: 600;
     color: black;
 }
 
