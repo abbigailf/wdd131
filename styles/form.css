@@ -36,6 +36,15 @@ form {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #f8f6fc;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
 .star-row {
     display: flex;
     justify-content: space-between;
