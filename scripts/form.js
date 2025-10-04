@@ -6,15 +6,24 @@ const products = [
     { id: "jj-1969", name: "warp equalizer", averagerating: 5.0 }
 ];
 
-// Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
-    const select = document.getElementById("productName"); // get the select element
+    const select = document.getElementById("productName");
+    if (select) {
+        const defaultOption = document.createElement("option");
+        defaultOption.value = "";
+        defaultOption.textContent = "--Select a product--";
+        select.appendChild(defaultOption);
 
-    // Loop through products array and create option elements
-    products.forEach(product => {
-        const option = document.createElement("option"); // create <option>
-        option.value = product.id; // set value = product id
-        option.textContent = product.name; // display product name
-        select.appendChild(option); // add to select
-    });
+        products.forEach(product => {
+            const option = document.createElement("option");
+            option.value = product.id;
+            option.textContent = product.name;
+            select.appendChild(option);
+        });
+    }
+
+    const lastModifiedEl = document.getElementById("lastModified");
+    if (lastModifiedEl) {
+        lastModifiedEl.textContent = document.lastModified;
+    }
 });

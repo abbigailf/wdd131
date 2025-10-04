@@ -28,7 +28,7 @@
                 </select>
 
                 <fieldset class="rating">
-                    <legend>Overall Rating: </legend>
+                    <legend>Overall Rating: <span class="required">*</span></legend>
                     <div class="star-row">
                         <label><input type="radio" name="rating" value="1" required> ★</label>
                         <label><input type="radio" name="rating" value="2"> ★★</label>
@@ -38,11 +38,11 @@
                     </div>
                 </fieldset>
 
-                <label for="installDate">Date of Installation:</label>
+                <label for="installDate">Date of Installation: <span class="required">*</span></label>
                 <input type="date" id="installDate" name="installDate" required>
 
                 <fieldset>
-                    <legend>Which features did you find useful in the product? (Check all that apply):</legend>
+                    <legend>Which features did you find useful in the product? (Check all that apply)<span class="required">*</span></legend>
                     <label><input type="checkbox" name="features" value="Durability"> Durability</label>
                     <label><input type="checkbox" name="features" value="EaseOfUse"> Ease of Use</label>
                     <label><input type="checkbox" name="features" value="Performance"> Performance</label>
