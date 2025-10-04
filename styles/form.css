@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f6fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #3c0d59;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header,
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #3c0d59;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    width: 100%;
+    padding: 2rem;
+    background: #eae0f3;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #f8f6fc;
+    /* Optional: background behind all */
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.star-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.star-row label {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.6rem;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    color: #3c0d59;
+    transition: background-color 0.3s ease;
+}
+
+.star-row label:hover {
+    background-color: #f2e9fb;
+}
+
+.star-row input[type="radio"] {
+    accent-color: #3c0d59;
+    margin: 0;
+}
+
+label,
+legend {
+    font-weight: bold;
+    color: #3c0d59;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+fieldset input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+fieldset label {
+    display: block !important;
+    margin-bottom: 0.5rem;
+}
+
+fieldset label {
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: #3c0d59;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #2e0844;
+}
+
+/* Confirmation Page Styles */
+main p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.optional {
+    color: #004085;
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
+/* Footer */
+footer {
+    background-color: #3c0d59;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    form {
+        padding: 1rem;
+    }
+
+    fieldset label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
