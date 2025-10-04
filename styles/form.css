@@ -6,22 +6,16 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #3c0d59;
-    color: white;
-    text-align: center;
-    padding: 1.5rem 1rem;
-}
-
 header,
 footer {
-    padding: 1.5rem;
-    text-align: center;
     background-color: #3c0d59;
     color: white;
+    text-align: center;
+    padding: 1.5rem;
 }
 
-header h1 {
+header h1,
+footer p {
     margin: 0;
 }
 
@@ -42,20 +36,9 @@ form {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
-.form-container {
-    max-width: 600px;
-    margin: 2rem auto;
-    background-color: #f8f6fc;
-    /* Optional: background behind all */
-    border-radius: 10px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-}
-
 .star-row {
     display: flex;
     justify-content: space-between;
-    gap: 0rem;
     flex-wrap: wrap;
     margin-top: 0.5rem;
 }
@@ -89,6 +72,17 @@ legend {
     color: #3c0d59;
 }
 
+.required {
+    color: #8b0000;
+    font-weight: bold;
+}
+
+.optional {
+    color: #004085;
+    font-size: 0.85em;
+    font-weight: normal;
+}
+
 input[type="text"],
 input[type="date"],
 select,
@@ -106,28 +100,13 @@ textarea {
 
 fieldset {
     border: none;
-    padding: 0;
+    padding: 0.5rem 0 0 0;
     margin: 0;
-    padding-top: 0.5rem;
-}
-
-input[type="checkbox"] {
-    margin-right: 0.5rem;
-}
-
-fieldset input[type="checkbox"] {
-    display: inline-block;
-    vertical-align: middle;
 }
 
 fieldset label {
-    display: block !important;
+    display: block;
     margin-bottom: 0.5rem;
-}
-
-fieldset label {
-    margin-right: 1rem;
-    display: inline-block;
 }
 
 input[type="checkbox"] {
@@ -150,26 +129,20 @@ input[type="submit"]:hover {
     background-color: #2e0844;
 }
 
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus,
+input[type="submit"]:focus {
+    outline: 2px solid #3c0d59;
+    outline-offset: 2px;
+}
+
 /* Confirmation Page Styles */
 main p {
     font-size: 1.2rem;
     margin: 1rem 0;
     text-align: center;
-}
-
-.optional {
-    color: #004085;
-    font-size: 0.85em;
-    font-weight: normal;
-}
-
-/* Footer */
-footer {
-    background-color: #3c0d59;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
 }
 
 /* Responsive */

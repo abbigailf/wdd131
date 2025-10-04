@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let storedCount = localStorage.getItem("reviewCount") || "0";
-    let count = Number(storedCount);
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
     count++;
     localStorage.setItem("reviewCount", count);
+
     document.getElementById("reviewCount").textContent = count;
+
     document.getElementById("currentyear").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
 });
