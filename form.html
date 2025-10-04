@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
-    <script src="js/form.js" defer></script>
+    <script src="scripts/form.js" defer></script>
     <title>Product Review Form</title>
 </head>
 
@@ -22,13 +22,13 @@
 
         <main>
             <form method="get" action="review.html">
-                <label for="productName">Product Name:</label>
+                <label for="productName">Product Name: <span class="required">*</span></label>
                 <select id="productName" name="productName" required>
                     <option value="" disabled selected>Choose a Product...</option>
                 </select>
 
                 <fieldset class="rating">
-                    <legend>Overall Rating:</legend>
+                    <legend>Overall Rating: </legend>
                     <div class="star-row">
                         <label><input type="radio" name="rating" value="1" required> ★</label>
                         <label><input type="radio" name="rating" value="2"> ★★</label>
